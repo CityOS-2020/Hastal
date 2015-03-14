@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
   namespace :api do
-    mount_devise_token_auth_for 'User', at: '/auth'
+    devise_for :users
   end
 
-  get 'edit', to: 'places#edit', as: :edit_place
-  patch 'edit', to: 'places#update'
+  namespace :admin do
+    get 'edit', to: 'places#edit', as: :edit_place
+    patch 'edit', to: 'places#update'
+    root 'dashboard#index'
+  end
 
-  devise_for :owners, path: ''
-
-  root to: 'dashboard#index'
+  devise_for :owners, path: 'admin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

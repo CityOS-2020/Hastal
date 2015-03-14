@@ -1,5 +1,4 @@
-class PlacesController < ApplicationController
-  before_action :authenticate_owner!, only: [:edit, :update]
+class Admin::PlacesController < AdminController
   before_action :set_place, only: [:edit, :update]
 
   def edit
@@ -7,7 +6,7 @@ class PlacesController < ApplicationController
 
   def update
     if @place.update(place_params)
-      redirect_to root_url, notice: 'Place was successfully updated.'
+      redirect_to admin_root_url, notice: 'Place was successfully updated.'
     else
       render :edit
     end
