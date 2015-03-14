@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  namespace :api do
+    mount_devise_token_auth_for 'User', at: '/auth'
+  end
+
   get 'edit', to: 'places#edit', as: :edit_place
   patch 'edit', to: 'places#update'
 
