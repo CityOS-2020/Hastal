@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% flash.each do |name, msg| %>
+  <div class="#{name.to_s == 'notice' ? 'success' : 'alert'}">
+    <%= msg %>
+  </div>
+<% end %>
 
 <%= yield %>
 

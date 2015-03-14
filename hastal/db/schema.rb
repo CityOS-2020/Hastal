@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150313223538) do
+ActiveRecord::Schema.define(version: 20150313232012) do
 
   create_table "owners", force: :cascade do |t|
     t.string   "username",               default: "", null: false
@@ -26,9 +26,27 @@ ActiveRecord::Schema.define(version: 20150313223538) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "place_id"
   end
 
+  add_index "owners", ["place_id"], name: "index_owners_on_place_id"
   add_index "owners", ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
   add_index "owners", ["username"], name: "index_owners_on_username", unique: true
+
+  create_table "places", force: :cascade do |t|
+    t.string   "name"
+    t.string   "slug"
+    t.string   "description"
+    t.string   "address"
+    t.string   "phone"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "places", ["slug"], name: "index_places_on_slug", unique: true
 
 end

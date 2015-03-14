@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'edit', to: 'places#edit', as: :edit_place
+  patch 'edit', to: 'places#update'
+
   devise_for :owners, path: ''
 
   root to: 'dashboard#index'
