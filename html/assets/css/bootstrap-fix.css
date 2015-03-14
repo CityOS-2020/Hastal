@@ -1,0 +1,80 @@
+html, body
+{
+	padding-left: 		0 !important;
+	font-family:  		'Montserrat', sans-serif !important;
+	font-weight:  		400;
+	background-color: 	#f5f5f5 !important;
+}
+a
+{
+
+	transition: 		color 0.2s linear 0s;
+	-webkit-transition: color 0.2s linear 0s;
+}
+a:hover, a:focus
+{
+	color: 				#e5553d !important;
+}
+.container, .row
+{
+	width: 				1000px !important;
+	padding:  			0 !important;
+}
+.btn-xlg
+{
+	padding: 			22px 32px;
+	font-size: 			18px;
+	line-height: 		1.33333;
+	border-radius: 		6px;
+}
+
+.btn-primary
+{
+	background:  		#e5553d !important;
+	color: 				#f5f5f5 !important;
+	border: 			1px solid #e5553d !important;
+
+}
+.btn-primary:hover
+{
+	background:  		rgba(229,85,61,.75) !important;
+	transition: 		background-color 0.2s linear 0s !important;
+}
+.btn-primary2
+{
+	background:  		transparent; !important;
+	color: 				#e5553d !important;
+	border: 			1px solid #e5553d !important;
+
+}
+.btn-primary2:hover
+{
+	background:  		rgb(229,85,61) !important;
+	color: 				#f5f5f5 !important;
+	transition: 		background-color 0.2s linear 0s !important;
+}
+.btn-primary3
+{
+	background:  		#e5553d !important;
+	color: 				#f5f5f5 !important;
+	border-bottom: 		3px solid rgba(0,0,0,.33) !important;
+
+}
+.btn-primary3:hover
+{
+	background:  		rgba(229,85,61,.75) !important;
+	transition: 		background-color 0.2s linear 0s !important;
+}
+.btn-default
+{
+	background:  		none !important;
+	border: 			1px solid rgb(245,245,245) !important;
+	color: 				rgb(245,245,245) !important;
+
+}
+.btn-default:hover
+{
+	background:  		rgb(245,245,245) !important;
+	color: 				#e5553d !important;
+	transition: 		background-color 0.2s linear 0s !important;
+}
