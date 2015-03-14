@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hastal </title>
+    <meta name="description" content="{____DESC_____}">
+    <meta name="author" content="{____AUTHOR_____}">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap332/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-fix.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      if (typeof jQuery == 'undefined') {
+        document.write(unescape('%3Cscript type="text/javascript" src="assets/javascript/jquery-2.0.3.min.js"%3E%3C/script%3E'));
+      }
+    </script>
+    <script src="assets/bootstrap332/js/bootstrap.min.js"></script>
+
+  </head>
+  <body class="cover vh">
+    <div class="toolbar">
+      <div class="container">
+        <div class="logo"><a href="index.html">hastal</a></div>
+        <ul class="auth pull-right">
+          <li><a href="login.html">Prijava</a></li>
+          <li><a href="register.html">Registracija</a></li>
+        </ul>    
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <ul class="menu">
+          <li><a href="#">Klubovi</a></li>
+          <li><a href="#">Restorani</a></li>
+          <li><a href="#">Pubovi</a></li>
+          <li><a href="#">Eventi</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="register-form">
+        <div class="form-content">
+          <form>
+            <div class="form-group">
+              <input type="name" class="form-control" id="firstlast" placeholder="Ime i prezime">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password" placeholder="Lozinka">
+            </div>
+            <div class="form-group">
+              <input type="rpassword" class="form-control" id="retypepassword" placeholder="Ponovi lozinku">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Stvori račun</button>
+            <p class="help-block"><a href="#">Zaboravljena lozinka? Resetujte ovdje</a></p>
+            <hr>
+            <p class="help-block">Ukoliko već imate račun, molimo prijavite se</p>
+            <button type="submit" class="btn btn-default btn-block">Prijavi se</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

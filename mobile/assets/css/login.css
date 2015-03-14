@@ -1,0 +1,87 @@
+body
+{
+	background: 		#000;
+}
+.login-form .form-content span
+{
+	color: 				#e5553d !important;
+}
+.appheader
+{
+	position:  			fixed;
+	width:  			100%;
+	height:  			80px;
+	left:  				0px;
+	right:  			0px;
+	border-bottom: 		1px solid #fff;
+}
+.tint
+{
+	background-color: 	rgba(0,0,0,.66);
+	width:  			100%;
+	height:  			100%;
+	position:  			fixed;
+}
+.cover-image
+{
+	background: 		url(../images/home_bg.png) no-repeat fixed center;
+	background-size:  	cover;
+}
+
+.login-form
+{
+	overflow: 			hidden;
+	display: 			table;
+	font-family:  		'Montserrat';
+	width: 				100%;
+}
+.login-form form
+{
+	position:  			fixed;
+	left:  				15px;
+	right:  			15px;
+	bottom:  			15px !important;
+}
+.login-form .form-content
+{
+	display: 			table-cell;
+	vertical-align: 	middle;
+	width: 				100%;
+	text-align:  		center;
+}
+.login-form .form-content
+{
+	margin-bottom:  	25px;
+}
+
+.login-form .form-content .toptext 
+{
+    margin: 			30px 0px;
+}
+.login-form .form-content p
+{
+	font-weight:  		400;
+	font-size:  		20px;
+	padding:  			10px 0;
+	text-shadow: 		0 1px 1px rgba(0,0,0,.10);
+}
+
+.login-form .form-content .form-group input
+{
+	border: 			1px solid rgb(245,245,245);
+	background-color:	rgb(245,245,245);
+	border-radius:  	3px;
+	box-shadow:  		0 1px 1px rgba(0,0,0,.1);
+	font-size:  		12px;
+}
+.login-form .form-content p.help-block
+{
+	color:  			rgb(245,245,245);
+	font-size:  		12px;
+	font-weight:  		400;
+	padding:  			10px 0 0 0;
+}
+.login-form .form-content p.help-block a
+{
+	color:  			rgb(245,245,245);
+}
